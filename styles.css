@@ -349,6 +349,7 @@ img {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-top: 5rem;
     overflow: hidden;
     background-color: var(--color-bg);
@@ -383,8 +384,8 @@ img {
 
 .hero-content {
     max-width: 850px;
-    margin: 0;
-    /* Align left for corporate feel */
+    margin: 0 auto;
+    text-align: center;
 }
 
 .badget-text {
@@ -414,8 +415,8 @@ img {
 .hero p {
     font-size: 1.25rem;
     color: var(--color-text-muted);
-    margin-bottom: 2.5rem;
-    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    max-width: 800px;
 }
 
 .hero-actions {
