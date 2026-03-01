@@ -580,7 +580,7 @@ img {
     overflow: hidden;
     text-align: left;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-    transition: var(--transition);
+    transition: all 0.1s ease-out;
 }
 
 .identidad-card:hover {
