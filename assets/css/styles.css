@@ -1421,10 +1421,30 @@ img {
     .footer-grid {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 2.5rem;
+    }
+
+    .footer-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section li[style*="display: flex"],
+    .footer-section div[style*="display: flex"] {
+        justify-content: center;
     }
 
     .social-icons {
         align-items: center;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .btn-sm {
