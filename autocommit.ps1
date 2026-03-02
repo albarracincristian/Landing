@@ -28,7 +28,7 @@ while ($true) {
             $hayStaged = git diff --cached --name-only
             if (-not [string]::IsNullOrWhiteSpace(($hayStaged -join ""))) {
                 $fecha = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-                $mensaje = "$PrefijoMensaje: actualización automática $fecha"
+                $mensaje = "${PrefijoMensaje}: actualización automática $fecha"
                 git commit -m $mensaje | Out-Null
                 Write-Host "[$(Get-Date -Format 'HH:mm:ss')] Commit creado: $mensaje"
 

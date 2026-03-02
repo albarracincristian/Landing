@@ -310,6 +310,11 @@ img {
     position: relative;
 }
 
+.nav-links li a.nav-contact-btn {
+    font-size: 0.95rem;
+    padding: 0.45rem 1rem;
+}
+
 .nav-links li a::after {
     content: '';
     position: absolute;
@@ -722,6 +727,30 @@ img {
     animation: marquee 35s linear infinite;
 }
 
+.marquee-with-logo .marquee-content {
+    padding-left: 13rem;
+}
+
+.marquee-logo-badge {
+    position: absolute;
+    left: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    pointer-events: none;
+}
+
+.marquee-logo-badge img {
+    height: 32px;
+    width: auto;
+    display: block;
+    opacity: 0.65;
+}
+
 .marquee-container:hover .marquee-content {
     animation-play-state: paused;
 }
@@ -994,6 +1023,24 @@ img {
 
     .nav-links li a {
         font-size: 1.2rem;
+    }
+
+    .marquee-with-logo .marquee-content {
+        padding-left: 9.5rem;
+    }
+
+    .marquee-logo-badge {
+        left: 0.9rem;
+        padding: 0.35rem 0.75rem;
+    }
+
+    .marquee-logo-badge img {
+        height: 26px;
+    }
+
+    .nav-links li a.nav-contact-btn {
+        font-size: 1.2rem;
+        padding: 0.55rem 1.2rem;
     }
 
     /* Nav toggle animation */
