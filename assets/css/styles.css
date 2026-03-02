@@ -379,7 +379,7 @@ img {
 }
 
 .hero-logistics {
-    background-image: url('hero_logistics.png');
+    background-image: url('../img/hero-logistics.png');
 }
 
 .hero::before {
