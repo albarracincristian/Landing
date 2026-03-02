@@ -1436,8 +1436,8 @@ img {
         align-items: center;
     }
 
-    .footer-section li[style*="display: flex"],
-    .footer-section div[style*="display: flex"] {
+    .footer-section li[style*="flex"],
+    .footer-section div[style*="flex"] {
         justify-content: center;
     }
 
