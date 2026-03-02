@@ -1107,8 +1107,7 @@ img {
 .marquee-logo-badge {
     position: absolute;
     left: 1.25rem;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0.75rem;
     z-index: 3;
     padding: 0.45rem 0.9rem;
     border-radius: 999px;
@@ -1375,17 +1374,22 @@ img {
         font-size: 1.2rem;
     }
 
-    .marquee-with-logo .marquee-content {
-        padding-left: 9.5rem;
+    .marquee-container {
+        padding: 3rem 0;
     }
 
     .marquee-logo-badge {
         left: 0.9rem;
-        padding: 0.35rem 0.75rem;
+        top: 0.5rem;
+        padding: 0.5rem 0.8rem;
+        background: rgba(255, 255, 255, 0.95);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .marquee-logo-badge img {
-        height: 26px;
+        height: 35px;
+        opacity: 1;
     }
 
     .nav-links li a.nav-contact-btn {
