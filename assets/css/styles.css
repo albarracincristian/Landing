@@ -1280,13 +1280,50 @@ img {
 }
 
 @media (max-width: 768px) {
+    .brands-tabs-wrapper {
+        flex-direction: column;
+        gap: 1rem !important;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .brands-tabs-wrapper .static-logo {
+        height: 35px !important;
+        margin-bottom: 0.5rem;
+    }
+
     .brands-tabs {
-        padding: 0.25rem;
+        padding: 0.3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 15px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .brand-tab {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+        flex: 1 1 auto;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    .brand-tab svg {
+        width: 14px;
+        height: 14px;
+        margin-right: 0.2rem;
+    }
+
+    .grid-brands {
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .brand-chip-static {
         padding: 0.6rem 1rem;
-        font-size: 0.85rem;
+        font-size: 0.8rem;
+        border-radius: 8px;
     }
 }
 
