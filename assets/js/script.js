@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // --- Navbar Scroll Effect ---
     const navbar = document.getElementById('navbar');
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -31,6 +31,77 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // --- Brands Tabs Logic (With Auto-Play) ---
+    const brandTabs = document.querySelectorAll('.brand-tab:not(.ji-tab)');
+    const brandPanels = document.querySelectorAll('.brand-panel:not(.ji-panel)');
+    let brandInterval;
+
+    const activateBrandTab = (index) => {
+        brandTabs.forEach(t => t.classList.remove('active'));
+        brandPanels.forEach(p => p.classList.remove('active'));
+
+        const tab = brandTabs[index];
+        tab.classList.add('active');
+        const target = tab.getAttribute('data-target');
+        const targetPanel = document.getElementById(`panel-${target}`);
+        if (targetPanel) {
+            targetPanel.classList.add('active');
+        }
+    };
+
+    if (brandTabs.length > 0) {
+        let currentBrandIndex = 0;
+
+        // Auto-cycle every 2.5 seconds
+        brandInterval = setInterval(() => {
+            currentBrandIndex = (currentBrandIndex + 1) % brandTabs.length;
+            activateBrandTab(currentBrandIndex);
+        }, 2500);
+
+        brandTabs.forEach((tab, index) => {
+            tab.addEventListener('click', () => {
+                // Pause auto-play on manual override
+                clearInterval(brandInterval);
+                activateBrandTab(index);
+            });
+        });
+    }
+
+    // --- J&I Brands Tabs Logic (With Auto-Play) ---
+    const jiTabs = document.querySelectorAll('.ji-tab');
+    const jiPanels = document.querySelectorAll('.ji-panel');
+    let jiInterval;
+
+    const activateJiTab = (index) => {
+        jiTabs.forEach(t => t.classList.remove('active'));
+        jiPanels.forEach(p => p.classList.remove('active'));
+
+        const tab = jiTabs[index];
+        tab.classList.add('active');
+        const target = tab.getAttribute('data-target');
+        const targetPanel = document.getElementById(`panel-${target}`);
+        if (targetPanel) {
+            targetPanel.classList.add('active');
+        }
+    };
+
+    if (jiTabs.length > 0) {
+        let currentJiIndex = 0;
+
+        // Auto-cycle every 2.5 seconds
+        jiInterval = setInterval(() => {
+            currentJiIndex = (currentJiIndex + 1) % jiTabs.length;
+            activateJiTab(currentJiIndex);
+        }, 2500);
+
+        jiTabs.forEach((tab, index) => {
+            tab.addEventListener('click', () => {
+                // Pause auto-play on manual override
+                clearInterval(jiInterval);
+                activateJiTab(index);
+            });
+        });
+    }
     // --- Reveal Animations on Scroll ---
     const revealElements = document.querySelectorAll('.fade-up, .reveal-up, .reveal-left, .reveal-right');
 
@@ -49,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial check on load
     revealOnScroll();
-    
+
     // Check on scroll
     window.addEventListener('scroll', revealOnScroll);
 

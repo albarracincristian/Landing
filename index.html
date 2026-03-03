@@ -316,164 +316,256 @@
             </div>
         </div>
     </section>
-    <!-- NUESTRAS MARCAS (Marquee) -->
-    <section id="marcas" class="section marquee-section">
+    <!-- NUESTRAS MARCAS (Tabs & Carrusel) -->
+    <section id="marcas" class="section marquee-section" style="padding: 6rem 0;">
         <div class="container text-center reveal-up mb-4">
             <h2 class="section-title">Nuestras <span class="text-gradient">Marcas</span></h2>
-            <p class="lead" style="max-width: 700px; margin: 0 auto 3rem;">Lideramos la distribución regional con un
-                portafolio robusto diseñado para cada perfil de consumidor.</p>
+            <p class="lead" style="max-width: 800px; margin: 0 auto 2.5rem;">Lideramos la distribución regional con un
+                portafolio robusto diseñado para cada perfil de consumidor, organizado por unidad de negocio.</p>
 
-            <div class="brand-stats-container">
-                <div class="brand-stat-card">
-                    <span class="brand-stat-number">136+</span>
-                    <span class="brand-stat-label">Marcas Líderes</span>
-                    <span class="brand-stat-desc">Principales marcas</span>
-                </div>
-                <div class="brand-stat-card">
-                    <span class="brand-stat-number">10+</span>
-                    <span class="brand-stat-label">Categorías</span>
-                    <span class="brand-stat-desc">Cervezas, Gaseosas, Aguas, Vinos, Snacks, Golosinas, Isotónicos y
-                        más</span>
-                </div>
-                <div class="brand-stat-card">
-                    <span class="brand-stat-number">100%</span>
-                    <span class="brand-stat-label">Disponibilidad</span>
-                    <span class="brand-stat-desc">Stock Permanente</span>
+            <!-- Category Tabs -->
+            <div class="brands-tabs-wrapper" style="align-items: center; gap: 1.5rem;">
+                <img src="assets/img/logo-luanbeer-negro.png" alt="Luan Beer" class="static-logo"
+                    style="height: 40px; opacity: 0.8; flex-shrink: 0;">
+                <div class="brands-tabs">
+                    <button class="brand-tab active" data-target="cervezas">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M18 8h2a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11m3 3v11M15 5v14M11 8v11M7 8v11" />
+                        </svg>
+                        Cervezas
+                    </button>
+                    <button class="brand-tab" data-target="ung">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 2v2M7 5a10 10 0 0 0 5 13M17 5a10 10 0 0 1-5 13M9 18h6M10 22h4" />
+                        </svg>
+                        Gaseosas
+                    </button>
+                    <button class="brand-tab" data-target="aguas">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                        </svg>
+                        Aguas
+                    </button>
+                    <button class="brand-tab" data-target="adyacencias">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                        Adyacencias
+                    </button>
+                    <button class="brand-tab" data-target="vino">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 22s-2-1.1-2-4 2-4 2-4V8c0-2-1.33-3-4-3-2.67 0-4 1-4 3v6s2 1.1 2 4-2 4-2 4M2 22s2-1.1 2-4-2-4-2-4V8c0-2 1.33-3 4-3 2.67 0 4 1 4 3v6s-2 1.1-2 4 2 4 2 4M12 22V5" />
+                        </svg>
+                        Vino
+                    </button>
                 </div>
             </div>
         </div>
 
-        <div class="marquee-container marquee-with-logo reveal-up stagger-1">
-            <div class="marquee-logo-badge" aria-hidden="true">
-                <img src="assets/img/logo-luanbeer-negro.png" alt="">
+        <div class="brands-panels-container reveal-up stagger-1">
+
+            <!-- Cervezas Panel -->
+            <div class="brand-panel active" id="panel-cervezas">
+                <div class="container grid-brands mt-2">
+                    <div class="brand-chip-static">Andes</div>
+                    <div class="brand-chip-static">Andes Origen</div>
+                    <div class="brand-chip-static">Brahma</div>
+                    <div class="brand-chip-static">Budweiser</div>
+                    <div class="brand-chip-static">Corona</div>
+                    <div class="brand-chip-static">Goose Island</div>
+                    <div class="brand-chip-static">Patagonia</div>
+                    <div class="brand-chip-static">Quilmes</div>
+                    <div class="brand-chip-static">Quilmes 0.0</div>
+                    <div class="brand-chip-static">Quilmes 1890</div>
+                    <div class="brand-chip-static">Quilmes Bajo Cero</div>
+                    <div class="brand-chip-static">Quilmes IPA</div>
+                    <div class="brand-chip-static">Stella Artois</div>
+                    <div class="brand-chip-static">Stout Quilmes</div>
+                    <div class="brand-chip-static">Temple</div>
+                </div>
             </div>
-            <div class="marquee-content">
-                <!-- Cervezas -->
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M18 8h2a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11m3 3v11M15 5v14M11 8v11M7 8v11" />
-                    </svg>Quilmes</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M18 8h2a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11m3 3v11M15 5v14M11 8v11M7 8v11" />
-                    </svg>Stella Artois</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M18 8h2a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11m3 3v11M15 5v14M11 8v11M7 8v11" />
-                    </svg>Brahma</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M18 8h2a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11m3 3v11M15 5v14M11 8v11M7 8v11" />
-                    </svg>Corona</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M18 8h2a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11m3 3v11M15 5v14M11 8v11M7 8v11" />
-                    </svg>Patagonia</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M18 8h2a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11m3 3v11M15 5v14M11 8v11M7 8v11" />
-                    </svg>Andes Origen</span>
-                <!-- Gaseosas / Bebidas -->
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2v2M7 5a10 10 0 0 0 5 13M17 5a10 10 0 0 1-5 13M9 18h6M10 22h4" />
-                    </svg>Pepsi</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2v2M7 5a10 10 0 0 0 5 13M17 5a10 10 0 0 1-5 13M9 18h6M10 22h4" />
-                    </svg>7UP</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2v2M7 5a10 10 0 0 0 5 13M17 5a10 10 0 0 1-5 13M9 18h6M10 22h4" />
-                    </svg>Paso de los Toros</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2v2M7 5a10 10 0 0 0 5 13M17 5a10 10 0 0 1-5 13M9 18h6M10 22h4" />
-                    </svg>H2OH!</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2v2M7 5a10 10 0 0 0 5 13M17 5a10 10 0 0 1-5 13M9 18h6M10 22h4" />
-                    </svg>Gatorade</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-                    </svg>Red Bull</span>
-                <!-- Aguas -->
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
-                    </svg>Eco de los Andes</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
-                    </svg>Glaciar</span>
-                <!-- Vinos -->
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M22 22s-2-1.1-2-4 2-4 2-4V8c0-2-1.33-3-4-3-2.67 0-4 1-4 3v6s2 1.1 2 4-2 4-2 4M2 22s2-1.1 2-4-2-4-2-4V8c0-2 1.33-3 4-3 2.67 0 4 1 4 3v6s-2 1.1-2 4 2 4 2 4M12 22V5" />
-                    </svg>Dante Robino</span>
-                <!-- Repetición para Loop Infinito -->
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M18 8h2a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11m3 3v11M15 5v14M11 8v11M7 8v11" />
-                    </svg>Quilmes</span>
+
+            <!-- UNG Panel -->
+            <div class="brand-panel" id="panel-ung">
+                <div class="container grid-brands mt-2">
+                    <div class="brand-chip-static chip-ung">7 UP</div>
+                    <div class="brand-chip-static chip-ung">Awafrut</div>
+                    <div class="brand-chip-static chip-ung">Gatorade</div>
+                    <div class="brand-chip-static chip-ung">H2Oh</div>
+                    <div class="brand-chip-static chip-ung">Mirinda</div>
+                    <div class="brand-chip-static chip-ung">Paso de los Toros</div>
+                    <div class="brand-chip-static chip-ung">Pepsi</div>
+                    <div class="brand-chip-static chip-ung">Pepsi Black</div>
+                    <div class="brand-chip-static chip-ung">Red Bull</div>
+                    <div class="brand-chip-static chip-ung">Rockstar</div>
+                </div>
             </div>
+
+            <!-- Aguas Panel -->
+            <div class="brand-panel" id="panel-aguas">
+                <div class="container grid-brands mt-2">
+                    <div class="brand-chip-static chip-aguas">Eco de los Andes</div>
+                    <div class="brand-chip-static chip-aguas">Glaciar</div>
+                    <div class="brand-chip-static chip-aguas">Nestlé Pureza Vital</div>
+                </div>
+            </div>
+
+            <!-- Adyacencias Panel -->
+            <div class="brand-panel" id="panel-adyacencias">
+                <div class="container grid-brands mt-2">
+                    <div class="brand-chip-static chip-ady">Del Valle Sidra</div>
+                    <div class="brand-chip-static chip-ady">Patagonia Sidra</div>
+                    <div class="brand-chip-static chip-ady">Sidra 1930</div>
+                </div>
+            </div>
+
+            <!-- Vino Panel -->
+            <div class="brand-panel" id="panel-vino">
+                <div class="container grid-brands mt-2">
+                    <div class="brand-chip-static chip-vino">Capriccio</div>
+                    <div class="brand-chip-static chip-vino">Dante Robino</div>
+                    <div class="brand-chip-static chip-vino">Nave</div>
+                    <div class="brand-chip-static chip-vino">Novecento</div>
+                </div>
+            </div>
+
         </div>
 
-        <div class="container reveal-up" aria-hidden="true" style="margin-top: 2.25rem;">
+        <!-- LINE SEPARATOR -->
+        <div class="container reveal-up" aria-hidden="true" style="margin-top: 4rem; margin-bottom: 2rem;">
             <div
                 style="height: 1px; max-width: 760px; margin: 0 auto; background: linear-gradient(90deg, transparent, var(--color-border), transparent); opacity: 0.7;">
             </div>
         </div>
-        <div class="marquee-container marquee-with-logo reveal-up stagger-2">
-            <div class="marquee-logo-badge" aria-hidden="true">
-                <img src="assets/img/logo-ji-definitivo.png" alt="">
+
+        <div class="container text-center reveal-up mb-4 stagger-1">
+            <!-- Secondary Category Tabs J&I (Separated by section visually) -->
+            <div class="brands-tabs-wrapper ji-tabs-wrapper mt-5" style="align-items: center; gap: 1.5rem;">
+                <img src="assets/img/logo-ji-definitivo.png" alt="J&I SRL" class="static-logo"
+                    style="height: 40px; opacity: 0.8; flex-shrink: 0;">
+                <div class="brands-tabs">
+                    <button class="brand-tab ji-tab active" data-target="pepsico">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01" />
+                        </svg>
+                        Pepsico Snacks
+                    </button>
+                    <button class="brand-tab ji-tab" data-target="pernod">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                        </svg>
+                        Pernod Ricard
+                    </button>
+                    <button class="brand-tab ji-tab" data-target="georgalos">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                            <line x1="3" y1="9" x2="21" y2="9" />
+                            <line x1="9" y1="21" x2="9" y2="9" />
+                        </svg>
+                        Georgalos
+                    </button>
+                    <button class="brand-tab ji-tab" data-target="pronovelties">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                            <line x1="12" y1="22.08" x2="12" y2="12" />
+                        </svg>
+                        Pronovelties
+                    </button>
+                </div>
             </div>
-            <div class="marquee-content">
-                <!-- Spirits / Destilados -->
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2L8 22h8L12 2zM12 2v20M8 10h8M9 15h6" />
-                    </svg>Mumm</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2L8 22h8L12 2zM12 2v20M8 10h8M9 15h6" />
-                    </svg>Cusenier</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2L8 22h8L12 2zM12 2v20M8 10h8M9 15h6" />
-                    </svg>Beefeater</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2L8 22h8L12 2zM12 2v20M8 10h8M9 15h6" />
-                    </svg>Blenders</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2L8 22h8L12 2zM12 2v20M8 10h8M9 15h6" />
-                    </svg>Absolut</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2L8 22h8L12 2zM12 2v20M8 10h8M9 15h6" />
-                    </svg>Doble V</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2L8 22h8L12 2zM12 2v20M8 10h8M9 15h6" />
-                    </svg>Malibu</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2L8 22h8L12 2zM12 2v20M8 10h8M9 15h6" />
-                    </svg>Wyborowa</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2L8 22h8L12 2zM12 2v20M8 10h8M9 15h6" />
-                    </svg>Ramazzotti</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2L8 22h8L12 2zM12 2v20M8 10h8M9 15h6" />
-                    </svg>Orloff</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2L8 22h8L12 2zM12 2v20M8 10h8M9 15h6" />
-                    </svg>Ballantine´s</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2L8 22h8L12 2zM12 2v20M8 10h8M9 15h6" />
-                    </svg>Havana Club</span>
-                <!-- Vinos -->
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M22 22s-2-1.1-2-4 2-4 2-4V8c0-2-1.33-3-4-3-2.67 0-4 1-4 3v6s2 1.1 2 4-2 4-2 4M2 22s2-1.1 2-4-2-4-2-4V8c0-2 1.33-3 4-3 2.67 0 4 1 4 3v6s-2 1.1-2 4 2 4 2 4M12 22V5" />
-                    </svg>Etchart</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2L8 22h8L12 2zM12 2v20M8 10h8M9 15h6" />
-                    </svg>Chivas</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2L8 22h8L12 2zM12 2v20M8 10h8M9 15h6" />
-                    </svg>Tia Maria</span>
-                <span class="brand-chip"><svg viewBox="0 0 24 24">
-                        <path d="M12 2L8 22h8L12 2zM12 2v20M8 10h8M9 15h6" />
-                    </svg>Jameson</span>
+        </div>
+
+        <div class="brands-panels-container reveal-up stagger-2">
+
+            <!-- Pepsico Panel -->
+            <div class="brand-panel ji-panel active" id="panel-pepsico">
+                <div class="container grid-brands mt-2">
+                    <div class="brand-chip-static chip-pepsico">3D</div>
+                    <div class="brand-chip-static chip-pepsico">Cheetos</div>
+                    <div class="brand-chip-static chip-pepsico">Doritos</div>
+                    <div class="brand-chip-static chip-pepsico">Lays</div>
+                    <div class="brand-chip-static chip-pepsico">Pehuamar</div>
+                    <div class="brand-chip-static chip-pepsico">Pep</div>
+                    <div class="brand-chip-static chip-pepsico">Quaker</div>
+                    <div class="brand-chip-static chip-pepsico">Tostitos</div>
+                    <div class="brand-chip-static chip-pepsico">Twistos</div>
+                </div>
             </div>
+
+            <!-- Pernod Ricard Panel -->
+            <div class="brand-panel ji-panel" id="panel-pernod">
+                <div class="container grid-brands mt-2">
+                    <div class="brand-chip-static chip-pernod">Absolut</div>
+                    <div class="brand-chip-static chip-pernod">Arnaldo</div>
+                    <div class="brand-chip-static chip-pernod">Ballantine's</div>
+                    <div class="brand-chip-static chip-pernod">Beefeater</div>
+                    <div class="brand-chip-static chip-pernod">Blenders</div>
+                    <div class="brand-chip-static chip-pernod">Brighton</div>
+                    <div class="brand-chip-static chip-pernod">Buhero</div>
+                    <div class="brand-chip-static chip-pernod">Cafayate</div>
+                    <div class="brand-chip-static chip-pernod">Chivas</div>
+                    <div class="brand-chip-static chip-pernod">Cusenier</div>
+                    <div class="brand-chip-static chip-pernod">Doble V</div>
+                    <div class="brand-chip-static chip-pernod">Etchart</div>
+                    <div class="brand-chip-static chip-pernod">Glenlivet</div>
+                    <div class="brand-chip-static chip-pernod">Havana Club</div>
+                    <div class="brand-chip-static chip-pernod">Jameson</div>
+                    <div class="brand-chip-static chip-pernod">Malfy</div>
+                    <div class="brand-chip-static chip-pernod">Malibu</div>
+                    <div class="brand-chip-static chip-pernod">Mumm</div>
+                    <div class="brand-chip-static chip-pernod">Orloff</div>
+                    <div class="brand-chip-static chip-pernod">Premium</div>
+                    <div class="brand-chip-static chip-pernod">Ramazzotti</div>
+                    <div class="brand-chip-static chip-pernod">Tia Maria</div>
+                    <div class="brand-chip-static chip-pernod">Wyborowa</div>
+                </div>
+            </div>
+
+            <!-- Georgalos Panel -->
+            <div class="brand-panel ji-panel" id="panel-georgalos">
+                <div class="container grid-brands mt-2">
+                    <div class="brand-chip-static chip-georgalos">Alteza</div>
+                    <div class="brand-chip-static chip-georgalos">Bazooka</div>
+                    <div class="brand-chip-static chip-georgalos">Daqui</div>
+                    <div class="brand-chip-static chip-georgalos">Flynn Paff</div>
+                    <div class="brand-chip-static chip-georgalos">Full Mani</div>
+                    <div class="brand-chip-static chip-georgalos">Georgalos</div>
+                    <div class="brand-chip-static chip-georgalos">Lenguetazo</div>
+                    <div class="brand-chip-static chip-georgalos">Mantecol</div>
+                    <div class="brand-chip-static chip-georgalos">Namur</div>
+                    <div class="brand-chip-static chip-georgalos">Nucrem</div>
+                    <div class="brand-chip-static chip-georgalos">Palitos de la Selva</div>
+                    <div class="brand-chip-static chip-georgalos">Suchard</div>
+                    <div class="brand-chip-static chip-georgalos">Toddy</div>
+                    <div class="brand-chip-static chip-georgalos">Tokke</div>
+                </div>
+            </div>
+
+            <!-- Pronovelties Panel -->
+            <div class="brand-panel ji-panel" id="panel-pronovelties">
+                <div class="container grid-brands mt-2">
+                    <div class="brand-chip-static chip-pronovelties">Argentitas</div>
+                    <div class="brand-chip-static chip-pronovelties">Dale</div>
+                    <div class="brand-chip-static chip-pronovelties">Tia Maruca</div>
+                </div>
+            </div>
+
         </div>
     </section>
 
