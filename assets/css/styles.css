@@ -1124,9 +1124,15 @@ img {
     transform: translateY(-1px);
 }
 
+.brands-panels-container {
+    min-height: 250px;
+    position: relative;
+}
+
 .brand-panel {
     display: none;
-    animation: fadeIn 0.5s ease;
+    animation: fadeIn 0.4s ease;
+    width: 100%;
 }
 
 .brand-panel.active {
@@ -1324,6 +1330,11 @@ img {
         padding: 0.6rem 1rem;
         font-size: 0.8rem;
         border-radius: 8px;
+    }
+
+    .brands-panels-container {
+        min-height: 480px;
+        /* Adjust for stacked chips on mobile */
     }
 }
 
