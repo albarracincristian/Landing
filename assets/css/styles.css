@@ -366,21 +366,24 @@ img {
     background-color: var(--color-bg);
 }
 
+.executive-hero {
+    position: relative;
+    overflow: hidden;
+}
+
 .hero-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85)),
+        url('../img/hero_brand_visual.png');
+    background-size: cover;
+    background-position: center;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -2;
+    z-index: -1;
 }
 
-.hero-logistics {
-    background-image: url('../img/hero-logistics.png');
-}
 
 .hero::before {
     content: '';
@@ -715,11 +718,12 @@ img {
 
 /* -- Premium Identity Section Overhaul -- */
 .identidad-card {
-    background: var(--color-bg);
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
     padding: 3rem 2.2rem;
     border-radius: calc(var(--border-radius) * 1.5);
-    border: 1px solid var(--color-border);
-    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid rgba(255, 215, 0, 0.1);
+    transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -737,12 +741,32 @@ img {
     height: 100%;
     background: radial-gradient(circle at top right, rgba(255, 102, 0, 0.03) 0%, transparent 60%);
     z-index: -1;
+    border-radius: inherit;
+}
+
+/* Background images for specific Core Business cards using Real Photos */
+.card-servicio::before {
+    background: linear-gradient(rgba(10, 10, 10, 0.75), rgba(10, 10, 10, 0.95)), url('../img/real_van_front.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-distribucion::before {
+    background: linear-gradient(rgba(10, 10, 10, 0.75), rgba(10, 10, 10, 0.95)), url('../img/real_truck_leaving.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-stock::before {
+    background: linear-gradient(rgba(10, 10, 10, 0.75), rgba(10, 10, 10, 0.95)), url('../img/real_stock_interior.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .identidad-card:hover {
-    transform: translateY(-12px);
     border-color: var(--color-primary);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 30px rgba(184, 134, 11, 0.2);
+    transform: translateY(-5px);
 }
 
 .identidad-icon {
